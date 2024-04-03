@@ -4,7 +4,7 @@
 // a,b,a+b,a+b + b, 
 //    , c , 
 
-function fibonacci(n){
+export function fibonacci(n){
     let a = 1;
     let b = 1;
     for (let i = 2; i < n; i++) {
