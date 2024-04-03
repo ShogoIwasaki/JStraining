@@ -1,0 +1,23 @@
+まず、連想配列（変数:life）をシャローコピー（let afterLife = {...life}）する。
+次に、1つ目のlifeとは別にした変数:afterLifeのanswerキーの値に0を代入し、それを２回目のconsole.logで表示させる。
+    let life = { answer: 42 };
+    console.log(life);
+    let afterLife = {...life};
+    afterLife.answer = 0;
+    console.log(afterLife);
+
+-----メモ-----
+開発者ツール (Chrome の場合 F12) のコンソール上に何が表示されるか予想し、結果が一致するか確認しなさい。
+→予想：変数lifeが連想配列なのでプルダウンで展開できる値が２つ表示される。
+ 結果：１つ目と２つ目でanswerキーの値が異なると思っていたが、両方0だった。
+
+開発者ツールを開いた状態のタブで HTML を開く場合と、HTML を開いた状態のタブで開発者ツールを開く場合とで、結果を比較しなさい。
+→開発者ツールを開いた状態のタブで HTML を開く場合:表示された2つのObjectのanswerキーの値が1つ目は42,2つ目は0
+ HTML を開いた状態のタブで開発者ツールを開く場合:表示された2つのObjectのanswerキーの値がどちらも0、また表示されているObjectの表示が前者と異なる。
+ 前者：
+ ‣Object
+ ‣Object
+
+ 後者：
+ ‣{answer: 42}
+ ‣{answer: 0}
