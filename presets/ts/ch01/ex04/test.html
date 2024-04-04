@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      // let life = { answer: 42 };
+      // console.log(life);
+      // let afterLife = life;
+      // afterLife["answer"] = 0;
+      // console.log(afterLife);
+
+      let life = { answer: 42 };
+      console.log(life);
+      let afterLife = {...life};//配列ではなく連想配列なので[]ではなく{}となる？
+      afterLife.answer = 0;
+      console.log(afterLife);
+    </script>
+  </body>
+</html>
