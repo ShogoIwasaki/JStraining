@@ -1,11 +1,11 @@
-// import { abs, sum, factorial } from "./index.js";
-import { abs } from "./index.js";
+import { abs, sum, factorial } from "./index.js";
+// import { abs } from "./index.js";
 
 // TypeScript の場合は以下:
 // import { abs, sum, factorial } from "./index.ts";
 
 describe("math", () => {
-  
+
   describe("abs", () => {
     it("returns same value when positive value given", () => {
       expect(abs(42)).toBe(42);
