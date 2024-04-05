@@ -5,3 +5,7 @@
     let afterLife = {...life};
     afterLife.answer = 0;
     console.log(afterLife);
+
+
+
+life.answerにして表示でもOKらしい
