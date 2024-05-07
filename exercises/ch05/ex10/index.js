@@ -7,7 +7,7 @@ for (let i = 0; i < 1000000; i++) {
   let x3 = obj.prop3;
 }
 let end1 = performance.now();
-console.log("Direct property access time: " + (end1 - start1) + " ms");
+console.log("time: " + (end1 - start1) + " ms");
 
 let start2 = performance.now();
 for (let i = 0; i < 1000000; i++) {
@@ -18,4 +18,4 @@ for (let i = 0; i < 1000000; i++) {
   }
 }
 let end2 = performance.now();
-console.log("Property access time with `with`: " + (end2 - start2) + " ms");
+console.log("time using 'with': " + (end2 - start2) + " ms");
