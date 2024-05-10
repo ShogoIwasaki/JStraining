@@ -10,3 +10,5 @@ export function bitCount(n) {
   // 加算されたcountを返す
   return count;
 }
+
+// >>>じゃないとnが負の数の時無限ループになる
