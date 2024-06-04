@@ -10,3 +10,7 @@ export function parseJson(str) {
     };
   }
 }
+
+// errorはオブジェクト型で返ってくるので、
+// オブジェクトのtoStringメソッドの結果を文字列型に変換したものを、
+// 最後に返すためにtoString()で変換する。
