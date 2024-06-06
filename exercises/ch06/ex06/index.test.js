@@ -1,7 +1,7 @@
 import { returnPropertie } from "./index.js";
 
 describe("returnPropertie", () => {
-  // 単純なオブジェクトのすべてのプロパティが返される
+  // 単純なオブジェクトのすべてのプロパティが返されることを確認
   it("returns all properties for a simple object", () => {
     let obj = { a: 1, b: 2 };
     expect(returnPropertie(obj)).toEqual(["a", "b"]);

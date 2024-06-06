@@ -1,4 +1,4 @@
-import { restrict, substract } from "./index.js";
+import { substract } from "./index.js";
 
 describe("restrict", () => {
   const symbol = Symbol("test");

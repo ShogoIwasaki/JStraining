@@ -6,7 +6,7 @@ export function returnPropertie(obj) {
   let ownSymbolProperties = Object.getOwnPropertySymbols(obj);
   properties = properties.concat(ownPropertyNames, ownSymbolProperties);
 
-  // 列挙可能な継承プロパティを取得
+  // プロトタイプチェーンを辿って列挙可能な継承プロパティを取得
   let prototype = Object.getPrototypeOf(obj);
   while (prototype !== null && prototype !== Object.prototype) {
     let prototypeProperties = Object.keys(prototype);

@@ -5,18 +5,20 @@ p.y = 2;
 let q = Object.create(p);
 q.z = 3;
 
-console.log(o.isPrototypeOf(p));
-console.log(o.isPrototypeOf(q));
-// o はp およびq のプロトタイプチェーン上に存在する
-console.log(p.isPrototypeOf(q));
-// p はq のプロトタイプチェーン上に存在する
+// oはpおよびqのプロトタイプチェーン上に存在する
+console.log(o.isPrototypeOf(p));// =>true
+console.log(o.isPrototypeOf(q));// =>true
+
+// pはqのプロトタイプチェーン上に存在する
+console.log(p.isPrototypeOf(q));// =>true
 
 let obj = new Object();
 let arr = new Array();
 let date = new Date();
 let map = new Map();
 
-console.log(Object.prototype.isPrototypeOf(obj));
-console.log(Array.prototype.isPrototypeOf(arr));
-console.log(Date.prototype.isPrototypeOf(date));
-console.log(Map.prototype.isPrototypeOf(map));
+// `Object`, `Array`, `Date`, `Map` の確認
+console.log(Object.prototype.isPrototypeOf(obj));// =>true
+console.log(Array.prototype.isPrototypeOf(arr));// =>true
+console.log(Date.prototype.isPrototypeOf(date));// =>true
+console.log(Map.prototype.isPrototypeOf(map));// =>true
