@@ -15,12 +15,13 @@ export function retryWithExponentialBackoff(func, maxRetry, callback) {
   function retry() {
     if (func()) {
       callback(true);
+      return true;
     } else if (attempt < maxRetry) {
-      attempt++;
       setTimeout(retry, Math.pow(2, attempt) * 1000);
     } else {
       callback(false);
     }
+    attempt++;
   }
 
   retry();
